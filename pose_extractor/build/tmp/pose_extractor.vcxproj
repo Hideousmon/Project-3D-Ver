@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2E961736-CB9F-3016-8EA1-B85E7EDBADEA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>pose_extractor</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pose_extractor.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pose_extractor.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pose_extractor.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pose_extractor.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pose_extractor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.pyd</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="Debug";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CMAKE_INTDIR=\"Debug\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/Debug/exports.def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\libs\python36.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/Debug/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/Debug/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="Release";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"Release\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/Release/exports.def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\libs\python36.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="MinSizeRel";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"MinSizeRel\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/MinSizeRel/exports.def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\libs\python36.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/MinSizeRel/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/MinSizeRel/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>CMAKE_INTDIR="RelWithDebInfo";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";pose_extractor_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src;C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\include;C:\Users\ZHENYU~1\ANACON~1\envs\pose3D\lib\site-packages\numpy\core\include;D:\OPENCV\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/RelWithDebInfo/exports.def E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\Zhenyu ZHAO\anaconda3\envs\pose3D\libs\python36.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;D:\OPENCV\opencv\build\x64\vc15\lib\opencv_world440.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/RelWithDebInfo/pose_extractor.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/pose_extractor.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/RelWithDebInfo/pose_extractor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/GithubOpenSource/Project-3D-Ver/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/GithubOpenSource/Project-3D-Ver/pose_extractor -BE:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp --check-stamp-file E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;D:\OPENCV\opencv\build\OpenCVConfig-version.cmake;D:\OPENCV\opencv\build\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCXXCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeRCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/GithubOpenSource/Project-3D-Ver/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/GithubOpenSource/Project-3D-Ver/pose_extractor -BE:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp --check-stamp-file E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;D:\OPENCV\opencv\build\OpenCVConfig-version.cmake;D:\OPENCV\opencv\build\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCXXCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeRCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/GithubOpenSource/Project-3D-Ver/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/GithubOpenSource/Project-3D-Ver/pose_extractor -BE:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp --check-stamp-file E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;D:\OPENCV\opencv\build\OpenCVConfig-version.cmake;D:\OPENCV\opencv\build\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCXXCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeRCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/GithubOpenSource/Project-3D-Ver/pose_extractor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/GithubOpenSource/Project-3D-Ver/pose_extractor -BE:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp --check-stamp-file E:/GithubOpenSource/Project-3D-Ver/pose_extractor/build/tmp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;D:\OPENCV\opencv\build\OpenCVConfig-version.cmake;D:\OPENCV\opencv\build\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\OPENCV\opencv\build\x64\vc15\lib\OpenCVModules.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeCXXCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeRCCompiler.cmake;E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\3.18.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\wrapper.cpp" />
+    <ClInclude Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src\extract_poses.hpp" />
+    <ClCompile Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src\extract_poses.cpp" />
+    <ClInclude Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src\human_pose.hpp" />
+    <ClCompile Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src\human_pose.cpp" />
+    <ClInclude Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src\peak.hpp" />
+    <ClCompile Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\src\peak.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\GithubOpenSource\Project-3D-Ver\pose_extractor\build\tmp\ZERO_CHECK.vcxproj">
+      <Project>{27ABC966-146D-349C-A91F-E346D2247BA4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
